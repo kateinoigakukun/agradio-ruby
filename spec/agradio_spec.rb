@@ -6,7 +6,7 @@ describe AGRadio do
   end
 
   it "record" do
-    AGRadio::Recorder.record 10, "/tmp/ag_radio.mp3"
+    AGRadio::Recorder.record 10, "/tmp/ag_radio.mp4"
   end
 
 end

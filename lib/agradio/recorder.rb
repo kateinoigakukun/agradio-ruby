@@ -1,3 +1,5 @@
+require 'date'
+
 module AGRadio
   module Recorder
     class << self
