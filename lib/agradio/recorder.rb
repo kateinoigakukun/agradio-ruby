@@ -21,7 +21,7 @@ module AGRadio
 
       def convert(flv_path, output)
         is_video = File.extname(output) == ".mp4"
-        command = %(ffmpeg -y -i "#{flv_path}" #{is_video ? "-vcodec" : "-acodec"} copy -ab 128k -loglevel quiet "#{output}")
+        command = %(ffmpeg -y -i "#{flv_path}" -ab 128k -loglevel quiet "#{output}")
         AGRadio::Helper.shell_exec command
         rm_command = %(rm #{flv_path})
         AGRadio::Helper.shell_exec rm_command
