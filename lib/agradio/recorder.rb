@@ -3,7 +3,7 @@ require 'date'
 module AGRadio
   module Recorder
     class << self
-      CONTENT_URL = 'rtmp://fms-base2.mitene.ad.jp/agqr/aandg2'
+      CONTENT_URL = 'rtmp://fms-base2.mitene.ad.jp/agqr/aandg22'
       def record(duration, output)
         AGRadio::FileManager.check_dir
         date = DateTime.now.strftime("%Y-%m-%d-%H-%M-%S")
